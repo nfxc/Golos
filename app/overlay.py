@@ -152,7 +152,6 @@ class Overlay(QWidget):
         self._update_region()
         win.show_without_activation(hwnd)
 
-    # DWM-акрилик не умеет в круглую маску, поэтому фон под плашкой снимаем сами.
     def _capture_backdrop(self, target):
         self._backdrop = None
         screen = QGuiApplication.screenAt(QCursor.pos()) or QGuiApplication.primaryScreen()
@@ -231,7 +230,6 @@ class Overlay(QWidget):
         self.level += (target - self.level) * 0.3
         self.update()
 
-    # Всё рисуем руками: QSS не умеет нормально в размытие и скругления.
     def paintEvent(self, event):
         painter = QPainter(self)
         painter.setRenderHint(QPainter.RenderHint.Antialiasing)

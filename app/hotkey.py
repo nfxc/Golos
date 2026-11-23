@@ -29,7 +29,6 @@ class KBDLLHOOKSTRUCT(ctypes.Structure):
     ]
 
 
-# Qt не различает левый Ctrl и правый Alt, поэтому слушаем клавиатуру через WinAPI.
 class HotkeyListener:
     def __init__(self, callback):
         self.callback = callback

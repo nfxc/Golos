@@ -1,4 +1,3 @@
-# Модели лежат отдельно в models, в exe их не зашиваем.
 from pathlib import Path
 
 from PyInstaller.utils.hooks import collect_all

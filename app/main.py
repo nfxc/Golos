@@ -177,7 +177,6 @@ class Golos(QObject):
             return
         self.state = PROCESSING
         self.overlay.show_processing()
-        # Даём дописать хвост фразы, иначе последнее слово часто срезается.
         self.capture_timer.start(220)
 
     def _finish_recording(self):

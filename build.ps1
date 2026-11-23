@@ -1,4 +1,3 @@
-# Собираем папку с exe и кладём модели рядом, чтобы они не раздували архив.
 $ErrorActionPreference = "Stop"
 Set-Location $PSScriptRoot
 

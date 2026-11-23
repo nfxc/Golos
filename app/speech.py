@@ -39,7 +39,6 @@ def to_16k(audio, sample_rate):
     return data.astype(np.float32)
 
 
-# Убираем слова-паразиты и приводим пунктуацию в нормальный вид.
 def clean_text(text, final=True):
     text = (text or "").strip()
     if not text:
@@ -98,7 +97,6 @@ def strip_punctuation(text):
     return re.sub(r"\s+", " ", text).strip()
 
 
-# GigaAM не любит куски длиннее 30 секунд. Режем по самому тихому месту.
 def split_long(audio, limit_seconds=28):
     limit = int(16000 * limit_seconds)
     if audio.size <= limit:
@@ -121,7 +119,6 @@ def split_long(audio, limit_seconds=28):
     return chunks
 
 
-# Русский идёт через GigaAM, английский перевод через Whisper.
 class SpeechEngine(QObject):
     final_ready = pyqtSignal(int, str)
     failed = pyqtSignal(int, str)

@@ -35,7 +35,6 @@ class Recorder:
                     callback=self._callback,
                 )
                 stream.start()
-                # Микрофону нужно чуть-чуть времени, иначе теряется первое слово.
                 time.sleep(0.15)
                 self.stream = stream
                 self.sample_rate = rate

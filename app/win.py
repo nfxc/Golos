@@ -133,8 +133,6 @@ def single_instance():
     return True
 
 
-# Acrylic в Windows красит весь прямоугольник окна, а нам нужна плашка.
-# Поэтому окно просто обрезаем скруглённым регионом, а фон размываем сами.
 def configure_window(hwnd):
     exstyle = user32.GetWindowLongPtrW(hwnd, GWL_EXSTYLE)
     exstyle |= WS_EX_NOACTIVATE | WS_EX_TOOLWINDOW
@@ -179,7 +177,6 @@ def modifiers_down():
     return any(user32.GetAsyncKeyState(key) & 0x8000 for key in keys)
 
 
-# Вставляем через буфер и Ctrl+V, иначе кириллица ломается в половине программ.
 def _key_event(vk, up=False):
     item = INPUT()
     item.type = 1
