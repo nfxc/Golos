@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+build/
+dist/
+models/
+release/
+*.lnk
+.venv/
+.vscode/
+*.log

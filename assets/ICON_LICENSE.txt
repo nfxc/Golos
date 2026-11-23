@@ -1,0 +1,4 @@
+﻿Microsoft Fluent UI System Icons
+Source: https://github.com/microsoft/fluentui-system-icons
+Icon: Mic, filled (24 px)
+License: MIT
