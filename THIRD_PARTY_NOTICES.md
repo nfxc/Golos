@@ -9,7 +9,7 @@
 - sounddevice: MIT, Matthias Geier.
 - numpy: BSD 3-Clause, NumPy developers.
 - huggingface-hub: Apache 2.0, Hugging Face.
-- PyQt6: GPLv3 или коммерческая лицензия, Riverbank Computing. При распространении exe нужно соблюсти GPLv3 или купить коммерческую лицензию.
+- PyQt6: GPLv3.
 - Qt: LGPLv3, GPLv3 или коммерческая лицензия, Qt Company.
 - PyInstaller: GPLv2 с исключением для собранных программ, PyInstaller Development Team.
 - Python: PSF License, Python Software Foundation.
