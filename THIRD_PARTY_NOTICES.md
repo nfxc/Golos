@@ -1,7 +1,5 @@
 # Сторонние компоненты
 
-Проект использует сторонние библиотеки и модели. Перед публикацией релиза проверь их условия.
-
 - GigaAM v3, модель и код: MIT, Salute Developers.
 - Whisper small, модель: MIT, OpenAI.
 - faster-whisper: MIT, SYSTRAN.
@@ -16,5 +14,3 @@
 - PyInstaller: GPLv2 с исключением для собранных программ, PyInstaller Development Team.
 - Python: PSF License, Python Software Foundation.
 - Fluent UI System Icons: MIT, Microsoft.
-
-Ссылки на исходные проекты и тексты лицензий есть на сайтах авторов.
